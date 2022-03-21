@@ -189,3 +189,15 @@ Mon Mar 21 00:45:53 UTC 2022:
  tests:  9|3
 total_score: 35/70
 2444386
+Mon Mar 21 01:02:36 UTC 2022: 
+ list.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:125:25: error: ‘next’ undeclared (first use in this function); did you mean ‘exit’?
+   aux->prev->next = aux-next;
+                         ^~~~
+                         exit
+list.c:125:25: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+9b06035
