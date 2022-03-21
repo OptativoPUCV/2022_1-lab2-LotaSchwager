@@ -91,7 +91,7 @@ void pushFront(List * list, void * data) {
 
   list->current = list->head;
 
-  return list->current;
+  return list->current->data;
 
 }
 
