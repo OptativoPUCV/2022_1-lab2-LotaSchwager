@@ -118,12 +118,11 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node* aux = list->current;
-  Node* siguiente = list->current->next;
+  Node* aux = list->head;
+  Node* siguiente = list->head->next;
 
   list->head = siguiente;
-  list->head->prev = NULL;
-  list->head->next = aux;
+  list->head->prev = NULL; 
 
 
 
