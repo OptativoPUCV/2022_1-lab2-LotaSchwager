@@ -65,3 +65,8 @@ list.c:86:3: error: ‘nuevo’ undeclared (first use in this function)
 list.c:86:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 fd571ff
+Mon Mar 21 00:07:15 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+74d1d84
