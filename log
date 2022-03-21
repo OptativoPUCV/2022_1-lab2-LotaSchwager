@@ -235,3 +235,23 @@ list.c:50:8: note: expected ‘List * {aka struct List *}’ but argument is of 
 cc1: all warnings being treated as errors
 Compilation failed
 2e5c1fe
+Mon Mar 21 01:06:09 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:122:30: error: passing argument 1 of ‘nextList’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Node* siguiente = nextList(list->current);
+                              ^~~~
+list.c:50:8: note: expected ‘List * {aka struct List *}’ but argument is of type ‘Node * {aka struct Node *}’
+ void * nextList(List * list) {
+        ^~~~~~~~
+list.c:123:29: error: passing argument 1 of ‘nextList’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Node* anterior = nextList(list->current);
+                             ^~~~
+list.c:50:8: note: expected ‘List * {aka struct List *}’ but argument is of type ‘Node * {aka struct Node *}’
+ void * nextList(List * list) {
+        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3548ea5
