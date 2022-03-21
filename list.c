@@ -123,6 +123,7 @@ void * popCurrent(List * list) {
 
   list->head = siguiente;
   list->head->prev = NULL;
+  list->head->next = aux;
 
 
 
