@@ -54,3 +54,14 @@ Sun Mar 20 23:58:55 UTC 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 175ca96
+Mon Mar 21 00:06:31 UTC 2022: 
+ list.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:86:3: error: ‘nuevo’ undeclared (first use in this function)
+   nuevo = createNode (data);
+   ^~~~~
+list.c:86:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fd571ff
