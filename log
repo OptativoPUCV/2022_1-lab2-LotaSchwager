@@ -201,3 +201,8 @@ list.c:125:25: error: ‘next’ undeclared (first use in this function); did yo
 list.c:125:25: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 9b06035
+Mon Mar 21 01:02:49 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b092fac
