@@ -120,7 +120,7 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   Node* aux = list->current;
   Node* siguiente = nextList(list);
-  Node* anterior = nextList(list);
+  Node* anterior = lastList(list);
 
   if (anterior != NULL){
 
