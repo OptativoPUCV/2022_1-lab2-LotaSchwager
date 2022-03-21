@@ -160,3 +160,9 @@ list.c:84:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 11b680b
+Mon Mar 21 00:32:06 UTC 2022: 
+ list.c | 4 ----
+ 1 file changed, 4 deletions(-)
+ tests:  9|3
+total_score: 35/70
+ba7d958
