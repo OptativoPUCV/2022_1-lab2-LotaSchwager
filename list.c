@@ -121,12 +121,9 @@ void * popCurrent(List * list) {
   Node* aux = list->head;
   Node* siguiente = list->head->next;
 
-  free(list->current);
-  siguiente->prev = NULL;
   list->head = siguiente;
 
-  
-
+  free(list->current);
   return aux->data;
 }
 
