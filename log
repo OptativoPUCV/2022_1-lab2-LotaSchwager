@@ -428,3 +428,14 @@ list.c:115:9: error: unused variable ‘siguiente’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e13deb1
+Mon Mar 21 02:02:05 UTC 2022: 
+ list.c | 12 ------------
+ 1 file changed, 12 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:115:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+e0bdd16
