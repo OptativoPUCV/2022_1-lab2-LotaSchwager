@@ -385,3 +385,18 @@ Mon Mar 21 01:48:44 UTC 2022:
  tests:  9|3
 total_score: 35/70
 4671500
+Mon Mar 21 01:59:44 UTC 2022: 
+ list.c | 18 +++---------------
+ 1 file changed, 3 insertions(+), 15 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:95:7: error: ‘List {aka struct List}’ has no member named ‘size’
+   list->size++;
+       ^~
+list.c: In function ‘popCurrent’:
+list.c:119:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+519625c
