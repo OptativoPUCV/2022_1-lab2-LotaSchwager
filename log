@@ -417,3 +417,14 @@ Mon Mar 21 02:00:30 UTC 2022:
  tests:  9|3
 total_score: 35/70
 7ce9358
+Mon Mar 21 02:01:49 UTC 2022: 
+ list.c | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:115:9: error: unused variable ‘siguiente’ [-Werror=unused-variable]
+   Node* siguiente = list->current->next;
+         ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e13deb1
