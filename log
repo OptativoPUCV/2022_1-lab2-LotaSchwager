@@ -206,3 +206,32 @@ Mon Mar 21 01:02:49 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b092fac
+Mon Mar 21 01:05:41 UTC 2022: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:122:3: error: ‘siguiente’ undeclared (first use in this function); did you mean ‘sigevent’?
+   siguiente = nextList(list->current);
+   ^~~~~~~~~
+   sigevent
+list.c:122:3: note: each undeclared identifier is reported only once for each function it appears in
+list.c:122:24: error: passing argument 1 of ‘nextList’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   siguiente = nextList(list->current);
+                        ^~~~
+list.c:50:8: note: expected ‘List * {aka struct List *}’ but argument is of type ‘Node * {aka struct Node *}’
+ void * nextList(List * list) {
+        ^~~~~~~~
+list.c:123:3: error: ‘anterior’ undeclared (first use in this function); did you mean ‘strerror’?
+   anterior = nextList(list->current);
+   ^~~~~~~~
+   strerror
+list.c:123:23: error: passing argument 1 of ‘nextList’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   anterior = nextList(list->current);
+                       ^~~~
+list.c:50:8: note: expected ‘List * {aka struct List *}’ but argument is of type ‘Node * {aka struct Node *}’
+ void * nextList(List * list) {
+        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2e5c1fe
